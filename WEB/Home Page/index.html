@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Overlap Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="user-info">
+            <img src="profile.png" alt="User Profile">
+            <div class="user-details">
+                <h3>Mohammad Yaqoob</h3>
+                <p>CNIC: 4330473409729</p>
+                <p>Mobile No: 923053177074</p>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <ul class="menu">
+            <li class="menu-item active">
+                <i class="fas fa-home"></i>
+                <span class="item-text">Home</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-user"></i>
+                <span class="item-text">My Profile</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-file-alt"></i>
+                <span class="item-text">Applied Applications</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-briefcase"></i>
+                <span class="item-text">Jobs</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                <span class="item-text">How to Apply</span>
+            </li>
+            <li class="menu-item">
+                <i class="fas fa-info-circle"></i>
+                <span class="item-text">About</span>
+            </li>
+        </ul>
+        <div class="notifications">
+            <p>No new notifications</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Welcome to ATS Candidate Portal</h1>
+            <p>Apply on the latest projects of government and private sector organizations and build your career with us!</p>
+            <button>How to Apply</button>
+        </header>
+        <div class="projects">
+            <input type="text" placeholder="Search by project name...">
+            <div class="no-projects">No project matched with your search!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and HTML */
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 95vw;
+    height: 90vh;
+    max-width: 1600px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #dedede;
+}
+
+/* Form Container */
+.form-container {
+    width: 48%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-right: 40px; /* Padding for the eye icon */
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Ensure space for the eye icon */
+    box-sizing: border-box;
+}
+
+/* Eye Icon for Show/Hide */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    user-select: none;
+    width: 30px;
+    text-align: center;
+}
+
+.toggle-password:hover {
+    color: #333; /* Change color on hover */
+}
+
+/* Buttons */
+.create-account-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.create-account-btn:hover {
+    background-color: #45a049;
+}
+
+.create-account-btn, .google-login-btn {
+    transition: background-color 0.3s ease;
+}
+
+.google-login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-login-btn:hover {
+    background-color: #357ae8;
+}
+
+.google-login-btn img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Image Container */
+.image-container {
+    width: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(#4CAF50, #4CAF50) padding-box,
+                linear-gradient(to right, #ffdd57, #4285F4) border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Policy{
+    margin-top: 15px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
+    .image-container, .form-container {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="email"], input[type="password"], .create-account-btn, .google-login-btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

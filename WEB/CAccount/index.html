@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="poster-vector.jpg" alt="We are hiring">
+        </div>
+        <div class="form-container">
+            <h2>Create your account</h2>
+            <form id="signupForm" action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="password">Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password" onclick="togglePasswordVisibility('password', this)">👁️</span>
+                </div>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                    <span class="toggle-password" onclick="togglePasswordVisibility('confirm-password', this)">👁️</span>
+                </div>
+
+                <!-- Error message if passwords don't match -->
+                <p id="password-error" style="color:red; display:none;">Passwords do not match!</p>
+
+                <button class="create-account-btn" type="submit">Create your account</button>
+
+                <button class="google-login-btn" type="button">
+                    <img src="google-icon.png" alt="Google Logo">
+                    Continue with Google
+                </button>
+            </form>
+            <p class="Policy">By creating an account you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
