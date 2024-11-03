@@ -1,0 +1,251 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 28px;
+    background-color: #4CAF50;
+    font-family: 'Helvetica', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.section-heading {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.job-details, .aptitude-tests, .candidates, .shortlisted-candidates, .final-shortlisted-candidates {
+    display: none;
+}
+
+/* Adjusted input field and textarea styles */
+input[type="text"], textarea {
+    display: block;
+    width: 100%; /* Full width by default */
+    max-width: 600px; /* Limit the max width */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.add-button, .add-job-button, .submit-button, .add-question-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.add-button:hover, .add-job-button:hover, .submit-button:hover, .add-question-button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Aptitude tests */
+.job-category {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.job-category label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Questions */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.question-set {
+    margin-top: 20px;
+}
+
+.question-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.question-block h3 {
+    font-size: 20px;
+}
+
+.question-input, .answer-input, .option-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Candidates section */
+.candidates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.candidates-table th, .candidates-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.candidates-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.candidates-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.candidates-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    h2, .section-heading {
+        font-size: 20px;
+    }
+
+    .add-button, .add-job-button, .submit-button, .add-question-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    input[type="text"], textarea {
+        max-width: 100%; /* Ensure full width on smaller screens */
+        font-size: 14px;
+    }
+
+    .question-block h3 {
+        font-size: 18px;
+    }
+
+    .candidates-table th, .candidates-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    h2, .section-heading {
+        font-size: 18px;
+    }
+
+    .add-button, .add-job-button, .submit-button, .add-question-button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .candidates-table th, .candidates-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
