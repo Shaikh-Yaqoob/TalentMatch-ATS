@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Category</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="QUE_func.js" defer></script> <!-- Make sure to link the script properly -->
+</head>
+<body>
+
+    <div class="container">
+        <h2 id="selected-category">Selected Category: </h2>
+
+        <!-- Button to show the input form to add a new question -->
+        <button class="add-question-button" onclick="showInputFields()">ADD NEW QUESTION</button>
+
+        <!-- Input fields for the new question (Initially hidden) -->
+        <div class="input-fields" id="input-fields" style="display: none;">
+            <input type="text" name="newQuestion" placeholder="Enter your question">
+            <input type="text" name="newAnswer" placeholder="Enter the correct answer">
+            <input type="text" name="newOptionA" placeholder="Option A">
+            <input type="text" name="newOptionB" placeholder="Option B">
+            <input type="text" name="newOptionC" placeholder="Option C">
+            <button class="submit-button" onclick="addQuestion()">Submit</button>
+        </div>
+
+        <!-- Question container to hold both dummy and newly added questions -->
+        <div id="question-container">
+            <!-- Pre-existing questions (dummy questions) -->
+            <div class="question-block">
+                <h3>Question 1: What is JavaScript?</h3>
+                <p><strong>Answer:</strong> JavaScript is a programming language used for web development.</p>
+                <p><strong>Option A:</strong> A markup language</p>
+                <p><strong>Option B:</strong> A scripting language</p>
+                <p><strong>Option C:</strong> A database language</p>
+            </div>
+
+            <div class="question-block">
+                <h3>Question 2: What does HTML stand for?</h3>
+                <p><strong>Answer:</strong> HyperText Markup Language</p>
+                <p><strong>Option A:</strong> HyperText Machine Language</p>
+                <p><strong>Option B:</strong> HyperText Markup Language</p>
+                <p><strong>Option C:</strong> HyperTool Machine Language</p>
+            </div>
+
+            <div class="question-block">
+                <h3>Question 3: What is CSS?</h3>
+                <p><strong>Answer:</strong> Cascading Style Sheets</p>
+                <p><strong>Option A:</strong> A programming language</p>
+                <p><strong>Option B:</strong> A styling language</p>
+                <p><strong>Option C:</strong> A scripting language</p>
+            </div>
+
+            <div class="question-block">
+                <h3>Question 4: What is SQL?</h3>
+                <p><strong>Answer:</strong> Structured Query Language</p>
+                <p><strong>Option A:</strong> A markup language</p>
+                <p><strong>Option B:</strong> A database management language</p>
+                <p><strong>Option C:</strong> A scripting language</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
