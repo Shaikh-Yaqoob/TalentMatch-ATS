@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  margin: 20px 40px;
+}
+
+/* Sidebar */
+.sidebar-applied {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar-applied ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-applied ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar-applied ul li a {
+  text-decoration: none;
+  color: #495057;
+  font-size: 1rem; /* 16px */
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.sidebar-applied ul li a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.sidebar-applied ul li a:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Content Area */
+.content {
+  width: 75%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-text {
+  text-align: center;
+}
+
+.content-text h2 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.content-text p {
+  color: #666;
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+}
+
+.start-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Saved Jobs Section */
+.job-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.job-card h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.job-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden Content */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+#sidebar-container:hover ~ .main-content {
+    margin-left: 250px;
+}

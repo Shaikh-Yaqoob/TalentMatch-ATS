@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Apply</title>
+  <link rel="stylesheet" href="applied.css">
+  <link rel="stylesheet" href="../../utility/styles.css">
+</head>
+<body>
+    <!-- Sidebar container -->
+    <div id="sidebar-container"></div> 
+    <div class="main-content">
+        <div class="header">
+            <h1>My Applications</h1>
+            <p>View Status of Application</p>
+        </div>
+
+        <div class="container">
+            <div class="sidebar-applied">
+                <ul>
+                    <li><a href="#" class="active" data-section="appliedJobs">Jobs applied</a></li>
+                    <li><a href="#" data-section="savedJobs">Saved Jobs</a></li>
+                </ul>        
+            </div>
+
+            <div class="content">
+            <!-- Jobs Applied Section (Default) -->
+            <div id="appliedJobs">
+                <div class="content-image">
+                <img src="image.jpg" alt="No Jobs Illustration" class="illustration">
+                </div>
+                <div class="content-text">
+                <h2>Ahh... We're sorry.</h2>
+                <h2>You have not applied any job yet.</h2>
+                <p>Don't worry. We are here to help you. You can start searching for your dream jobs.</p>
+                <button class="start-btn">Start looking for Jobs</button>
+                </div>
+            </div>
+
+            <!-- Saved Jobs Section (Initially Hidden) -->
+            <div id="savedJobs" class="hidden">
+                <div class="job-card">
+                <h3>Sales Manager</h3>
+                <p><strong>Marriott Group</strong> - Los Angeles, CA</p>
+                <p>Shipt is a marketplace that provides fresh produce, household essentials, and more from trusted local stores...</p>
+                <p>Applied: 12 day(s) ago</p>
+                <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="job-card">
+                <h3>Sales Manager</h3>
+                <p><strong>Marriott Group</strong> - Los Angeles, CA</p>
+                <p>Shipt is a marketplace that provides fresh produce, household essentials, and more from trusted local stores...</p>
+                <p>Applied: 12 day(s) ago</p>
+                <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="job-card">
+                <h3>Sales Manager</h3>
+                <p><strong>Marriott Group</strong> - Los Angeles, CA</p>
+                <p>Shipt is a marketplace that provides fresh produce, household essentials, and more from trusted local stores...</p>
+                <p>Applied: 12 day(s) ago</p>
+                <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="applied.js"></script>
+    <script src="../../utility/sidebar.js"></script>
+</body>
+</html>

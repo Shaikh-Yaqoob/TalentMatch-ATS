@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 80%; /* Cover most of the screen width */
+  width: 95%; /* Cover most of the screen width */
   height: 90vh; /* Adjust the height to nearly the full screen */
   background: white;
   border-radius: 10px;
@@ -43,7 +43,7 @@ body {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: royalblue;
   color: white;
   border: none;
   padding: 10px;
@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: royalblue;
 }
 
 form {
@@ -83,4 +83,7 @@ select {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+}
+#sidebar-container:hover ~ .main-content {
+  margin-left: 250px;
 }

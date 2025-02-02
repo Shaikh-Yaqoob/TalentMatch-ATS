@@ -1,0 +1,362 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+}
+/* Sidebar Header Styling */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px; /* Add some space below the header */
+    border-bottom: 1px solid #ddd; /* Add a border to separate */
+    margin-bottom: 8px; /* Space between header and content below */
+}
+
+
+/* Sidebar Styling */
+.sidebar-main {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sidebar Title */
+.sidebar-main h2 {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Reset Button Styling as Plain Text */
+.reset-btn {
+    background: none;      /* Remove background */
+    color: #f44336;        /* Set text color to red */
+    padding: 0;            /* Remove padding */
+    border: none;          /* Remove border */
+    cursor: pointer;       /* Show pointer cursor to indicate clickability */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Filter Group Labels */
+.sidebar-main label {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Text Input Styling */
+.sidebar-main input[type="text"],
+.sidebar-main input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Checkbox and Radio Styling */
+.sidebar-main input[type="checkbox"],
+.sidebar-main input[type="radio"] {
+    accent-color: #4c51bf;
+    margin-right: 8px;
+}
+
+.filter-heading {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    
+}
+
+/* Job Position Styling */
+.filter-group .job-options {
+    display: flex;
+    gap: 10px;        /* Space between "On Site" and "Remote" */
+    margin-top: 10px; /* Space between "Job Position" label and checkboxes */
+    margin-bottom: 5px; /* Space below the row */
+}
+
+/* Salary Range Styling */
+.filter-group .salary-options {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to the next row */
+    gap: 10px;        /* Space between options */
+    margin-top: 10px; /* Space between "Salary Range" label and options */
+}
+
+.filter-group .salary-options > div {
+    width: calc(50% - 5px); /* Each option takes half the width, with a small gap */
+}
+
+/* Job Function Styling */
+.job-function-options label {
+    display: block; /* Stack each option vertically */
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+
+
+/* Filter Group Styling */
+.filter-group {
+    margin-bottom: 5px;
+}
+
+
+
+/* Custom Range Styling */
+.custom-range {
+    display: flex;
+    justify-content: center; /* Centers the input boxes horizontally */
+    align-items: center; /* Centers the input boxes vertically */
+    gap: 10px; /* Space between the input boxes */
+    margin-top: 10px;
+}
+
+.custom-range input[type="number"] {
+    width: 100px; /* Adjust width to make it larger */
+    height: 35px; /* Increase height for better visibility */
+    padding: 8px;
+    font-size: 15px;
+    text-align: center; /* Centers the text inside the input box */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Custom Salary Input Alignment */
+.sidebar-main .filter-group:last-of-type input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 8px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Main Content Area */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Search Banner Styling */
+.search-banner {
+    background-color: #e9d7ff; /* Light purple background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-banner h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.search-banner p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Search Banner Styling */
+.search-banner {
+    background-color: royalblue; /* Light purple background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-banner h2 {
+    color:white;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.search-banner p {
+    color:white;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Search Bar Styling */
+.search-bar-job {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-bar-job input[type="text"] {
+    width: 100%;
+    padding: 10px 50px 10px 20px; /* Space on the right for the button */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-bar-job button {
+    position: absolute;
+    right: 10px;
+    background-color: royalblue; /* Green color for the button */
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-job button img {
+    width: 16px; /* Adjust as needed */
+    height: 14px; /* Adjust as needed */
+    display: block;
+}
+
+
+
+
+/* Job Results Styling */
+.job-results {
+    margin-top: 20px;
+}
+
+.job-results h3 {
+    margin-bottom: 10px;
+}
+
+/* Job Grid and Job Card Styling */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.job-logo {
+    height: 40px;
+    width: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.job-card h4 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.job-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.job-card button {
+    background-color: #4c51bf;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa; /* Light grey to match a clean, modern theme */
+    color: #333;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0f224f; /* Use main brand color */
+}
+
+.footer-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    filter: grayscale(0%); /* Bring back original color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.footer-link {
+    color: #007bff; /* Match brand highlight color */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+#sidebar-container:hover ~ .main-content {
+    margin-left: 250px;
+}

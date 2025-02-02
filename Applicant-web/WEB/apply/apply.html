@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Apply - Candidate Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../utility/styles.css">
+</head>
+<body>
+
+    <!-- Sidebar container -->
+    <div id="sidebar-container"></div>
+    <div class="main-content">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Background Image Section -->
+            <div class="background-image">
+                <div class="overlay-text">
+                    <h1>How to Apply</h1>
+                    <p>Instructions to perform various operations on ATS Candidate Portal</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Sidebar -->
+            <nav class="sidebar-app">
+                <h2>Instructions</h2>
+                <ul>
+                    <li><a href="#" class="active" onclick="showContent('login')" aria-label="Login Instructions">Login Instructions</a></li>
+                    <li><a href="#" onclick="showContent('register')" aria-label="Registration Instructions">Registration Instructions</a></li>
+                    <li><a href="#" onclick="showContent('forgetPassword')" aria-label="Forget Password Instructions">Forget Password Instructions</a></li>
+                    <li><a href="#" onclick="showContent('profile')" aria-label="Profile Instructions">Profile Instructions</a></li>
+                    <li><a href="#" onclick="showContent('settings')" aria-label="Settings Instructions">Settings Instructions</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main-section">
+                <h2 id="title">Login Instructions</h2>
+                <div id="content" class="instructions">
+                    <div id="loginContent">
+                        If you are already registered on STS Candidate Portal, then enter your CNIC Number and 6-digit password to login to your candidate portal.
+                    </div>
+                    <div id="registerContent" class="hidden">
+                        If you are not registered on STS Candidate Portal, click on 'Create an Account' link below to create a new account.
+                    </div>
+                    <div id="forgetPasswordContent" class="hidden">
+                        If you are registered on STS Candidate Portal, but you have forgotten your password, then click on 'Forget Password' link to recover your password.
+                    </div>
+                    <div id="profileContent" class="hidden">
+                        Here are the instructions on how to manage your profile on the Candidate Portal. Make sure your information is up to date for better processing.
+                    </div>
+                    <div id="settingsContent" class="hidden">
+                        You can customize your account settings here. Ensure your preferences are set correctly to receive important notifications.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../../utility/sidebar.js"></script>
+</body>
+</html>

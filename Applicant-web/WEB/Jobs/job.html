@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../utility/styles.css">
+    
+</head>
+
+<body>
+    <!-- Sidebar container -->
+    <div id="sidebar-container"></div>
+        <div class="main-content">
+        <div class="container">
+            <div class="sidebar-main">
+                <div class="sidebar-header">
+                    <h2>Filter</h2>
+                    <button class="reset-btn">Reset</button>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-heading" for="location">Job Location</label>
+                    <input type="text" id="location" placeholder="e.g., Jakarta, Indonesia">
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-heading">Job Position</label>
+                    <div class="job-options">
+                        <div>
+                            <input type="checkbox" id="onsite" name="position">
+                            <label for="onsite">On Site</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="remote" name="position">
+                            <label for="remote">Remote</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hybrid" name="position">
+                        <label for="hybrid">Hybrid</label>
+                    </div>
+                </div>
+
+
+                <div class="filter-group">
+                    <label class="filter-heading">Job Type</label>
+                    <div class="job-options">
+                        <div>
+                            <input type="checkbox" id="fulltime" name="jobType">
+                            <label for="fulltime">Fulltime</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="parttime" name="jobType">
+                            <label for="parttime">Parttime</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filter-group">
+                    <label class="filter-heading">Salary Range</label>
+                    <div class="salary-options">
+                        <div>
+                            <input type="radio" id="1k-2k" name="salary">
+                            <label for="1k-2k">$1k - $2k</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="3k-4k" name="salary">
+                            <label for="3k-4k">$3k - $4k</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="5k-6k" name="salary">
+                            <label for="5k-6k">$5k - $6k</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" id="custom" name="salary">
+                    <label for="custom">Custom</label>
+                    <div class="custom-range" style="overflow: hidden;">
+                        <input type="number" placeholder="Min" aria-label="Minimum Salary">
+                        <input type="number" placeholder="Max" aria-label="Maximum Salary">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-heading">Job Function</label>
+                    <div class="job-function-options">
+                        <label><input type="checkbox" name="job-function" value="Product Designer"> Product Designer</label>
+                        <label><input type="checkbox" name="job-function" value="UI/UX Designer"> UI/UX Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Web Designer"> Web Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Digital Designer"> Digital Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Graphic Designer"> Graphic Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Interior Designer"> Interior
+                            Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Creative Designer"> Creative
+                            Designer</label>
+                        <label><input type="checkbox" name="job-function" value="Front End Developer"> Front End
+                            Developer</label>
+                        <label><input type="checkbox" name="job-function" value="Back End Developer"> Back End
+                            Developer</label>
+                        <label><input type="checkbox" name="job-function" value="Fullstack Developer"> Fullstack
+                            Developer</label>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="search-banner">
+                    <h2>Discover your ideal career right here!</h2>
+                    <p>Explore opportunities that suit your interests to achieve the career you want.</p>
+                    <div class="search-bar-job">
+                        <input type="text" placeholder="Search Jobs...">
+                        <button type="submit"><img src="arrow.png" alt="Arrow Icon"></button>
+                    </div>
+                </div>
+
+                <div class="job-results">
+                    <h3>Available Jobs</h3>
+                    <div class="job-grid">
+                        <div class="job-card">
+                            <div class="job-logo"></div>
+                            <h4>IBM</h4>
+                            <p>Developer</p>
+                            <p>Onsite, Fulltime</p>
+                            <p>$30/hr - California, USA</p>
+                            <button>Details</button>
+                        </div>
+                        <!-- Add more job cards as needed -->
+                    </div>
+                </div>
+                <!-- Footer Section -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <h3 class="footer-heading">Stay Connected with Us</h3>
+                        <p class="footer-description">Join our community on social media for job updates, tips, and more.
+                            Let’s
+                            find
+                            your next opportunity together!</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="Facebook"><img src="../home/facebook.svg"
+                                    alt="Facebook"></a>
+                            <a href="#" class="social-icon" title="Twitter"><img src="../home/twitter.svg"
+                                    alt="Twitter"></a>
+                            <a href="#" class="social-icon" title="LinkedIn"><img src="../home/linkedin.svg"
+                                    alt="LinkedIn"></a>
+                            <a href="#" class="social-icon" title="Instagram"><img src="../home/instagram.svg"
+                                    alt="Instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Your Company Name. All rights reserved. | <a href="#" class="footer-link">Privacy
+                                Policy</a>
+                            | <a href="#" class="footer-link">Terms of Service</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../../utility/sidebar.js"></script>
+    
+</body>
+
+</html>

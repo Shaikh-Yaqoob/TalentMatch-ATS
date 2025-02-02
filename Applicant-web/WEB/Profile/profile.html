@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../utility/styles.css">
     <title>User Profile</title>
 </head>
+
 <body>
+    <!-- Sidebar container -->
+    <div id="sidebar-container"></div>
+    <div class="main-content"></div>
     <div class="container">
         <div class="profile-header">
             <img id="profilePhoto" src="https://via.placeholder.com/100" alt="Profile Photo">
@@ -72,6 +78,9 @@
         <input type="file" id="fileUpload" accept="image/png, image/jpeg" style="display: none;">
         <div id="confirmationMessage" style="display:none;">Profile updated successfully!</div>
     </div>
+    </div>
     <script src="script.js"></script>
+    <script src="../../utility/sidebar.js"></script>
 </body>
+
 </html>
